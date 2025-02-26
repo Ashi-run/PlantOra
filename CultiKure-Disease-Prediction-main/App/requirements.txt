@@ -1,31 +1,17 @@
-# Web Frameworks
 streamlit
-Flask==2.2.5
-gunicorn==20.1.0
-
-# Utilities
-click==8.1.3
-itsdangerous==2.1.2
-Jinja2==3.1.2
-MarkupSafe==2.1.3
-
-# Data Processing
-numpy==1.23.5
-pandas==2.2.3
-python-dateutil==2.8.2
-pytz==2023.3
-
-# Image Processing
-Pillow==9.5.0
-
-# Machine Learning & Deep Learning
-torch==2.2.1+cpu  # Updated to a compatible version
-torchvision==0.17.1+cpu  # Updated to a compatible version
-torchaudio==2.2.1+cpu  # If audio processing is needed
-
-# Other dependencies
+torch
+torchvision
+numpy
+pandas
+Pillow
+torchtext
 scikit-learn
 matplotlib
 seaborn
-joblib
 requests
+gunicorn
+Flask
+torchvision==0.16.0
+torchaudio==2.1.0
+opencv-python
+transformers
