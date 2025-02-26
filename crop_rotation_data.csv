@@ -1,6 +1,0 @@
-previous_crop,soil_nitrogen,soil_ph,rainfall,temperature,recommended_next_crop
-Wheat,30,6.5,500,22,Rice
-Rice,40,6.8,1200,28,Maize
-Maize,25,6.2,700,24,Soybean
-Soybean,35,6.0,800,26,Barley
-Barley,20,6.3,400,20,Wheat
