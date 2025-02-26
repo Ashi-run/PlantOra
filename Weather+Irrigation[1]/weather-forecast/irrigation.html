@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation System</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: url('C:/Users/Akshara/Downloads/s.i') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            margin: auto;
+            color: #333;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 12px;
+            width: 85%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        h1 {
+            color: #28a745;
+        }
+        #result {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Irrigation System</h1>
+        <label>Temperature (°C):</label>
+        <input type="number" id="temp" step="0.1"><br>
+        <label>Humidity (%):</label>
+        <input type="number" id="humidity" step="0.1"><br>
+        <label>Wind Speed (km/h):</label>
+        <input type="number" id="wind_speed" step="0.1"><br>
+        <label>Plant Type:</label>
+        <select id="plant_type">
+            <option value="wheat">Wheat</option>
+            <option value="corn">Corn</option>
+            <option value="rice">Rice</option>
+        </select><br>
+        <button onclick="getRecommendation()">Get Recommendation</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        function getRecommendation() {
+            let temp = parseFloat(document.getElementById("temp").value);
+            let humidity = parseFloat(document.getElementById("humidity").value);
+            let wind_speed = parseFloat(document.getElementById("wind_speed").value);
+            let plant_type = document.getElementById("plant_type").value;
+
+            if (isNaN(temp) || isNaN(humidity) || isNaN(wind_speed)) {
+                document.getElementById('result').innerText = "Please fill in all the fields.";
+                return;
+            }
+
+            let recommendation = getIrrigationRecommendation(temp, humidity, wind_speed, plant_type);
+            document.getElementById('result').innerText = `Irrigation Recommendation: ${recommendation}`;
+        }
+
+        function getIrrigationRecommendation(temp, humidity, wind_speed, plant_type) {
+            const plant_requirements = {
+                "wheat": [30, 50, 15],
+                "corn": [35, 40, 20],
+                "rice": [25, 60, 10]
+            };
+
+            const ideal = plant_requirements[plant_type] || [30, 50, 15];
+            const [ideal_temp, ideal_humidity, ideal_wind] = ideal;
+
+            if (temp > ideal_temp || wind_speed > ideal_wind) {
+                return "Water 3 times a day";
+            } else if (temp > (ideal_temp - 5) && humidity < (ideal_humidity - 10)) {
+                return "Water 2 times a day";
+            } else {
+                return "Water once a day";
+            }
+        }
+    </script>
+</body>
+</html>
