@@ -1,0 +1,6 @@
+rainfall,temperature,soil_ph,fertilizer_usage,yield_kg_per_hectare
+800,25,6.5,200,3500
+1200,27,6.8,250,4200
+600,23,5.9,180,2800
+1000,29,6.7,220,3900
+700,24,6.0,190,3100
