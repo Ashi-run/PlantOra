@@ -1,0 +1,41 @@
+Market,City,Demand,Price,Logistics,Region
+Azadpur Mandi,Delhi,15000,180,10,North
+Okhla Mandi,Delhi,12000,175,12,North
+Vashi APMC,Mumbai,20000,190,15,West
+Dadar Market,Mumbai,18000,185,14,West
+KR Market,Bengaluru,17000,160,18,South
+Yeshwanthpur,Bengaluru,14000,155,20,South
+Koyambedu Market,Chennai,16000,165,16,South
+Parrys Corner,Chennai,13000,160,18,South
+Howrah Market,Kolkata,19000,170,13,East
+Sealdah Market,Kolkata,17500,165,14,East
+Gaddiannaram Market,Hyderabad,14500,155,19,South
+Begum Bazaar,Hyderabad,12000,150,21,South
+Jamalpur Market,Ahmedabad,13500,140,22,West
+Kalupur Market,Ahmedabad,11000,135,23,West
+Mundhwa Market,Pune,12500,145,20,West
+Gultekdi Market,Pune,10000,140,22,West
+Lucknow Mandi,Lucknow,11000,130,25,North
+Aminabad Market,Lucknow,9000,125,28,North
+Jaipur Mandi,Jaipur,9500,135,24,West
+Chandpole Bazaar,Jaipur,8000,130,26,West
+Patna Market,Patna,8800,120,30,East
+Maurya Lok,Patna,7500,115,32,East
+Bhopal Mandi,Bhopal,10200,128,27,Central
+Itwara Market,Bhopal,8500,125,29,Central
+Raipur Mandi,Raipur,9600,140,26,Central
+Durg Market,Raipur,7800,135,28,Central
+Chandigarh Mandi,Chandigarh,10500,150,22,North
+Sector 17 Market,Chandigarh,8800,145,25,North
+Varanasi Mandi,Varanasi,8900,135,28,North
+Godowlia Market,Varanasi,7500,130,30,North
+Dehradun Mandi,Dehradun,7200,125,35,North
+Paltan Bazaar,Dehradun,6000,120,37,North
+Visakhapatnam Market,Visakhapatnam,9400,150,23,South
+Gopalapatnam Market,Visakhapatnam,7800,145,25,South
+Indore Mandi,Indore,9700,138,22,Central
+Rajwada Market,Indore,8200,135,24,Central
+Nagpur Mandi,Nagpur,9000,140,20,West
+Gandhibagh Market,Nagpur,7600,135,23,West
+Guwahati Mandi,Guwahati,8700,140,28,East
+Fancy Bazaar,Guwahati,7200,135,30,East
